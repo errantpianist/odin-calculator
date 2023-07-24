@@ -9,13 +9,20 @@
 </head>
 <body>
   <h2 class="title">Calculator</h2>
+  <h3 class="subtitle">Made with HTML, CSS and JavaScript</h3>
+  <p>Click the buttons or use your keyboard to type</p>
+  <p>(Limited to numbers up to 12 digits)</p>
   <div class="calculator">
-    <div id="display">123</div>
+    <div id="display">
+      <div id="display-previous"></div>
+      <div id="display-current">0</div>
+    </div>
     <div class="buttons">
-      <button class="button operator">AC</button>
-      <button class="button operator">+/-</button>
+      <button class="button" id="clear">AC</button>
+      
       <button class="button operator">%</button>
       <button class="button operator">/</button>
+      <button class="button" id="delete">⌫</button>
       <button class="button number">7</button>
       <button class="button number">8</button>
       <button class="button number">9</button>
@@ -27,13 +34,15 @@
       <button class="button number">1</button>
       <button class="button number">2</button>
       <button class="button number">3</button>
-      <button class="button operator">+</button>
+      <button class="button operator" id="plus">+</button>
       <button class="button number">0</button>
-      <button class="button">.</button>
-      <button class="button operator">=</button>
+      <button class="button number">.</button>
+      <button class="button" id="equals">=</button>
 
     </div>
   </div>
+
+  <footer>Yu Zhou Zhang © 2023</footer>
   
 </body>
 </html>

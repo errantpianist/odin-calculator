@@ -12,6 +12,21 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
 }
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+p {
+ text-align: center;
+  color: #000;
+  
+}
 
 .calculator {
   width: 360px;
@@ -23,7 +38,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
   padding: 20px 5px;
+  overflow: hidden;
 }
+
+
 
 #display {
   width: 80%;
@@ -31,14 +49,30 @@ body {
   background-color: #eee;
   border-radius: 10px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 20px;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 2rem;
   color: #000;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
+}
+
+#display-previous {
+  font-size: 1rem;
+  color: #888;
+  margin-left: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#display-current {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .buttons {
@@ -66,4 +100,17 @@ button {
 button:hover {
   background-color: #fff;
   color: #333;
+}
+
+#plus {
+  grid-column: 4 / 5;
+  grid-row: 4 / 6;
+  height: 110px;
+}
+
+footer {
+  text-align: center;
+  color: #eee;
+  font-size: 0.8rem;
+  margin-top: 40px;
 }
